@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 10px;
+            padding: 10px 80px;
+            background-color: #ffff;         
+        }
+        .header{
+            background-color:rgb(61, 59, 59);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .header h1{
+            font-size: 20px;
+            text-align: left ;
+            position: inherit;
+            top: 0;
+            color: #ffffff;
+        }
+        
+        .main-section{
+            position: relative;
+            top:50px;
+            text-align: center;
+        }
+
+        .main-section p{
+            padding-top: 170px;
+        }
+        
+        .step{
+            text-align: center;
+            border-radius: 4px;
+            margin: 10px 5px;
+        }
+
+        .nopadding{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        hr{
+            border-width: 4px;
+        }
+
+        .active{
+            border-color: #000000;
+        }
+        
+        .radio-lable{
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        input[type=radio]{
+            height: 28px;
+            width:28px;
+            margin: 20px;
+        }
+
+        .section{
+            padding: 50px;
+            border: 2px solid #acaaaa;
+            border-radius: 4px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Capgemin</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>1.</h1>
+                    <span>Ux Framework</span>
+                </div>
+                <hr class="active">
+            </div>
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>2.</h1>
+                    <span>Ux Packaging Manager</span>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>3.</h1>
+                    <span>Ux Theme</span>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>4.</h1>
+                    <span>Services</span>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>5.</h1>
+                    <span>Logging Framework</span>
+                </div>
+                <hr>                
+            </div>
+            <div class="col-md-2 nopadding">
+                <div class="step">
+                    <h1>6.</h1>
+                    <span>Generate</span>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section">
+                    <p>
+                        Please select the UX Framework you want to use in your Website.
+                    </p>
+                    
+                    <div class="radio">
+                        <label class="radio-lable"><input type="radio" name="optradio">Angular 2</label>
+                    </div>
+                    <div class="radio">
+                        <label class="radio-lable"><input type="radio" name="optradio">React JS</label>
+                    </div>
+                    <div class="radio disabled">
+                        <label class="radio-lable"><input type="radio" name="optradio" >KnockoutJS</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p style="text-align: right; padding-top: 20px;">
+                    <button type="button" class="btn btn-success">Next >></button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
