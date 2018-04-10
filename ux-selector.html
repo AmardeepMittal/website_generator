@@ -14,12 +14,17 @@
 
         body{
             margin: 0;
-            padding: 10px;
             padding: 10px 80px;
-            background-color: #ffff;         
+            background-color:#e9e7e7;         
         }
+
+        .container-bg{
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+        
         .header{
-            background-color:rgb(61, 59, 59);
+            background-color:#337ab7;
             padding: 10px;
             border-radius: 4px;
         }
@@ -46,6 +51,15 @@
             text-align: center;
             border-radius: 4px;
             margin: 10px 5px;
+            color:#337ab7
+        }
+
+        .step-active{
+            text-align: center;
+            border-radius: 4px;
+            margin: 10px 5px;
+            background-color: #337ab7;
+            color: white;
         }
 
         .nopadding{
@@ -55,10 +69,12 @@
 
         hr{
             border-width: 4px;
+            padding-bottom: 20px;
+            margin: 0;
         }
 
         .active{
-            border-color: #000000;
+            border-color: #337ab7;
         }
         
         .radio-lable{
@@ -73,10 +89,17 @@
         }
 
         .section{
-            padding: 50px;
+            margin:0;
+            padding: 40px;
             border: 2px solid #acaaaa;
             border-radius: 4px;
 
+        }
+
+        .btn-blue {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
         }
 
 
@@ -86,10 +109,11 @@
     <div class="header">
         <h1>Capgemin</h1>
     </div>
+    <div class="container-bg">
     <div class="container">
         <div class="row">
             <div class="col-md-2 nopadding">
-                <div class="step">
+                <div class="step-active">
                     <h1>1.</h1>
                     <span>Ux Framework</span>
                 </div>
@@ -132,7 +156,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div style="padding:0px;" class="col-md-12">
                 <div class="section">
                     <p>
                         Please select the UX Framework you want to use in your Website.
@@ -152,11 +176,13 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p style="text-align: right; padding-top: 20px;">
-                    <button type="button" class="btn btn-success">Next >></button>
+                <p style="text-align: right; padding: 20px 0px;">
+                    <button type="button" class="btn btn-blue btn-lg">Next >></button>
                 </p>
+                <br>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
